@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html dir="rtl" lang="ar">
   <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href=<?php echo get_theme_file_uri('public/faviconB&W.svg') ?> />
+    <meta charset="<?php bloginfo('charset'); ?>" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="profile" href="https://gmpg.org/xfn/11">
+    <link rel="icon" type="image/svg+xml" href=<?php echo get_theme_file_uri('public/faviconB&W.svg') ?> />
     <?php wp_head(); ?>
     <title>Dehimi Project</title>
   </head>
-  <body>
+  <body        <?php body_class(); ?>>
+        <?php wp_body_open(); ?>
   <header class="header">
       <div class="header-container">
         <div class="nav-actions">
-          <a href="#" class="search">
+          <a href="<?php echo esc_url(wc_get_page_permalink('shop')); ?>" class="search">
             <svg
               viewBox="0 0 24 24"
               fill="none"
@@ -25,7 +27,7 @@
               />
             </svg>
           </a>
-          <a href="#" class="shopping">
+          <a href="<?php echo esc_url(wc_get_cart_url()); ?>" class="shopping">
             <svg
               width="24"
               height="24"
@@ -67,8 +69,8 @@
           </ul>
         </nav>
 
-        <a href="#" class="logo">
-          <img class="logo" src="/imgs/Logo.svg" />
+        <a href="<?php echo esc_url(home_url('/')); ?>" class="logo">
+          <img class="logo" src="<?php echo esc_url(get_template_directory_uri()); ?>/public/images/Logo.svg" />
         </a>
         <button
           aria-expanded="false"

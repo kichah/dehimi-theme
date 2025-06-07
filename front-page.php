@@ -2,8 +2,8 @@
     <main id="home-page">
       <section class="hero">
         <img
-          src="/imgs/download.jpg"
-          alt="Students learning online"
+          src="<?php echo esc_url(get_template_directory_uri()); ?>/public/images/download.jpg"
+          alt="Hero Image"
           class="hero-image"
           loading="lazy"
         />

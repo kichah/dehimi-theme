@@ -2,7 +2,7 @@
       <div class="wrapper">
         <div class="footer-wrapper">
           <div class="footer-logo">
-            <img src="/imgs/logo-footer.svg" alt="logo " />
+            <img src="<?php echo esc_url(get_template_directory_uri()); ?>/public/images/logo-footer.svg" alt="footer logo  " />
           </div>
           <div class="footer-content">
             <div class="adress">
@@ -38,8 +38,7 @@
                   </svg>
                 </a>
                 <a href="insta">
-                  <?xml version="1.0" ?>
-                  <!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
+
                   <svg
                     height="100%"
                     style="
@@ -62,12 +61,11 @@
                   </svg>
                 </a>
                 <a href="what'sapp">
-                  <?xml version="1.0" ?><svg
+                  <svg
                     data-name="Layer 1"
                     id="Layer_1"
                     viewBox="0 0 512 512"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
+                    xmlns="http://www.w3.org/2000/svg">
                     <title />
                     <path
                       d="M263,127.88a120.44,120.44,0,0,0-99.7,188l-11.769,45.405,47.321-11.041A120.432,120.432,0,1,0,263,127.88Zm59.22,186.186c-16.845,7.9-52.014,3.778-89.065-27.93S186.6,220.316,191.8,202.454s25.63-21.162,29.484-20.309,23.126,31.406,20.5,34.97-15.311,16.25-15.311,16.25-.534,12.98,23.284,33.364,36.56,17.851,36.56,17.851,10.574-14.5,13.689-17.639,36.28,11.181,37.718,14.857S339.059,306.169,322.215,314.066Z"
@@ -78,12 +76,11 @@
                   </svg>
                 </a>
                 <a href="tiktok">
-                  <?xml version="1.0" ?><svg
+                 <svg
                     data-name="Layer 1"
                     id="Layer_1"
                     viewBox="0 0 512 512"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
+                    xmlns="http://www.w3.org/2000/svg">
                     <title />
                     <path
                       d="M256,0C114.615,0,0,114.615,0,256S114.615,512,256,512,512,397.385,512,256,397.385,0,256,0ZM385.62,232.382c-27.184,0-53.634-8.822-74-23.75l-.162,101.5a92.457,92.457,0,1,1-80.178-91.721v49.845a43.657,43.657,0,1,0,31.288,41.876V109.333h51.275a71.773,71.773,0,0,0,71.774,71.773Z"
@@ -105,10 +102,9 @@
             </div>
           </div>
         </div>
-        <div class="rights">©2025. All rights reserved.</div>
+        <div class="rights">&copy;<?php echo date('Y'); ?>. All rights reserved.</div>
       </div>
     </footer>
     <?php wp_footer(); ?>
-    <script type="module" src="/src/main.js"></script>
   </body>
 </html>
